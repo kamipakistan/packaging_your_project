@@ -37,7 +37,6 @@ def process(text):
     Summarizes the input text using a Hugging Face model.
     Compatible with TensorFlow backend.
     """
-    click.echo("Initializing summarizer model...")
 
     # Load the summarization model
     summarizer = pipeline("summarization", model="t5-small", framework="tf")
@@ -56,7 +55,6 @@ def process(text):
         do_sample=False
     )
 
-    click.echo("Summarization process complete!")
     click.echo("=" * 80)
 
     return result[0]["summary_text"]

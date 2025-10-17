@@ -1,6 +1,6 @@
 import click
 import os
-from utils import extract_from_url, process
+from .utils import extract_from_url, process
 
 # Mute TensorFlow logs
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
@@ -17,7 +17,7 @@ def main(url, file):
       python main.py --file article.txt
     """
     if not url and not file:
-        click.echo("❌ Please provide either --url or --file option.")
+        click.echo("Please provide either --url or --file option.")
         return
 
     # Extract text
@@ -37,6 +37,7 @@ def main(url, file):
     click.echo("=" * 80)
 
     # Run summarization
+    click.echo("Summary..")
     summary = process(text)
 
     click.echo(summary)

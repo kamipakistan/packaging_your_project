@@ -1,8 +1,8 @@
 Metadata-Version: 2.4
 Name: summarize
 Version: 0.0.1
-Summary: demo python CLI tool to summarize text using HuggingFace
-Home-page: https://github.com/kamipakistan/packing_your_project
+Summary: Demo Python CLI tool to summarize text using HuggingFace Transformers
+Home-page: https://github.com/kamipakistan/packaging_your_project
 Author: Kamran Khan
 Author-email: kamrankhnkami@gmail.com
 Requires-Python: >=3.8

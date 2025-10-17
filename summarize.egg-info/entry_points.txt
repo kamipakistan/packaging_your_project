@@ -1,2 +1,2 @@
 [console_scripts]
-summarize = HuggingfaceSummarization.main.py:main
+summarize = HuggingfaceSummarization.main:main
